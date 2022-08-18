@@ -108,6 +108,15 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install spark -n spark bitnami/spark
 ```
 
+### install livy deply
+
+```bash
+helm repo add jahstreet https://jahstreet.github.io/helm-charts
+helm repo update
+kubectl create ns livy
+helm install livy -n livy jahstreet/livy 
+```
+
 ## ITS BITNAMI WAY
 
 ## Begin by installing the NFS Server Provisioner
